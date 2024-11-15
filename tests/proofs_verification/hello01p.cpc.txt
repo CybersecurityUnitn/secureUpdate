@@ -1,0 +1,7 @@
+Verification time:
+~~~
+real 1.66s
+user 1.57s
+sys 0.09s
+~~~
+
