@@ -55,9 +55,10 @@ def verify_cose_ed25519_bytes(options, public_key, sig_val, signature_bytes):
 def main(options):
     
     # Read the manifest wrapper
-    wrapper = cbor.loads(options.manifest.read())
-
-    signed_wrapper = cbor.loads(options.signature.read())
+    wrapper =  cbor.loads(options.signature.read())
+    # Create a deep copy of the wrapper
+    signed_wrapper = cbor.loads(cbor.dumps(wrapper))
+    
     signature_bytes = extract_signature_bytes(SUITEnvelopeTagged().from_suit(signed_wrapper))
 
     public_key = None

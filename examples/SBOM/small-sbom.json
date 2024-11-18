@@ -1,0 +1,95 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "serialNumber": "urn:uuid:3e671687-395b-41f5-a30f-a58921a69b79",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2024-11-08T09:58:11+00:00"  
+    },
+    "components": [
+        {
+            "type": "firmware",
+            "name": "Baremetal-TEE-MPU-version",
+            "version": "1.0",
+            "description": "A Baremetal TEE for devices with Memory Protection Unit (MPU) supporting GlobalPlatform TEE APIs",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "Apache-2.0"
+                    }
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://github.com/crosscon/baremetal-tee/blob/main/MPU-version/README.md"
+                },
+                {
+                    "type": "vcs",
+                    "url": "git@github.com:crosscon/baremetal-tee.git"
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "Mbed TLS",
+            "version": "3.6.0",
+            "description": "An open source, portable, easy to use, readable and flexible TLS library, and reference implementation of the PSA Cryptography API.",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "content": "3ecf94fcfdaacafb757786a01b7538a61750ebd85c4b024f56ff8ba1490fcd38"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                    "id": "Apache-2.0"
+                    }
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://www.trustedfirmware.org/projects/mbed-tls"
+                },
+                {
+                    "type": "issue-tracker",
+                    "url": "https://github.com/Mbed-TLS/mbedtls/issues"
+                },
+                {
+                    "type": "vcs",
+                    "url": "git@github.com:Mbed-TLS/mbedtls.git"
+                }
+            ]
+        }, 
+        {
+            "type": "library",
+            "name": "stm32l4xx-hal-driver",
+            "version": "1.13.5",
+            "description": "Provides the STM32Cube MCU Component 'hal_driver' of the STM32L4 series.",
+            "licenses": [
+                {
+                    "license": {
+                    "id": "BSD-3-Clause"
+                    }
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://github.com/STMicroelectronics/stm32l4xx-hal-driver/blob/master/README.md"
+                },
+                {
+                    "type": "issue-tracker",
+                    "url": "https://github.com/STMicroelectronics/stm32l4xx-hal-driver/issues"
+                },
+                {
+                    "type": "vcs",
+                    "url": "git@github.com:STMicroelectronics/stm32l4xx-hal-driver.git"
+                }
+            ]
+        } 
+    ]
+  }

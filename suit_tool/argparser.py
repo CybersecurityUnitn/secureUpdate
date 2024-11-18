@@ -70,7 +70,6 @@ class MainArgumentParser(object):
         verify_parser = subparsers.add_parser('verify', help='Verify signature of a manifest')
 
         verify_parser.add_argument('-s', '--signature', metavar='FILE', type=argparse.FileType('rb'), required=True)
-        verify_parser.add_argument('-m', '--manifest', metavar='FILE', type=argparse.FileType('rb'), required=True)
         verify_parser.add_argument('-k', '--public-key', metavar='FILE', type=argparse.FileType('rb'), required=True)
         verify_parser.add_argument('-o', '--output-file', metavar='FILE', type=argparse.FileType('w'), default=sys.stdout)
 
