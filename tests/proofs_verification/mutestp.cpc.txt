@@ -1,7 +1,0 @@
-Verification time:
-~~~
-real 149.38s
-user 146.41s
-sys 3.19s
-~~~
-

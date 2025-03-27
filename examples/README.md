@@ -1,54 +1,86 @@
 # Examples description
     
-- Example 1: 
-    - Single Component inside the Manifest
-    - Single Proof inside the manifest encoded in Base64 (proof name: 'hellop.cpc.gz') with original size of size 72kB
-    - Custom SBOM minimized and encoded in Base64 (custom SBOM of Baremetal TEE with MPU) 
+- Example 1: Single component, 2 proof inside the manifest encoded in Base64:
+        1. Proof name: 'hello01iso.cpc' with original size of 562.8kB, compressed 83.3kB.
+        2. Proof name: 'pic32mz2.cpc' with original size of 40.8kB, compressed 6.6kB. 
+        SBOM: 2.4 kB
+        Total size: 123.5 kB
 
-- Example 2:
-    - Single Component inside the Manifest
-    - Double Proof inside the manifest encoded in Base64:
-        1. Proof name: 'hellop.cpc.gz', with original size of 72kB
-        2. Proof name: 'helloiso.cpc.gz', with original size of 83.3kb
-    - Custom SBOM minimized and encoded in Base64 (custom SBOM of Baremetal TEE with MPU) 
+- Example 2: Single component, 3 proof inside the manifest encoded in Base64:
+        1. Proof name: 'hello01iso.cpc', with original size of 562.8kB, compressed 83.3kB.
+        2. Proof name: 'hello01p.cpc', with original size of 476.2kB, compressed 72.0 kB.
+        2. Proof name: 'pic32mz2.cpc' with original size of 40.8kB, compressed 6.6kB. 
+        SBOM: 2.4 kB
+        Total size: 219.7 kB
+        
+- Example 3: Double components, 4 proof inside the manifest encoded in Base64
+        1. Proof name: 'hello01iso.cpc', with original size of 562.8kB, compressed 83.3kB.
+        2. Proof name: 'hello01p.cpc', with original size of 476.2kB, compressed 72.0 kB.
+        3. Proof name: 'crcp.cpc', with original size of 16.2 MB, compressed 2.1 MB.
+        4. Proof name: 'mempart.cpc' with original size of 15.3 kB, compressed 2.7kB.
+        SBOM: 34.7 kB
+        Total size: 3.1 MB
 
-- Example 3:
-    - Single Component inside the Manifest
-    - Single Proofs inside the manifest encoded in Base64 (proof name: 'crcp.cpc.gz'), with original size of 2.1MB
-    - SBOM minimized and encoded in Base64 (cern-lhc-vdm-editor-e564943 SBOM example) 
+- Example 4: Double component, 4 proof inside the manifest encoded in Base64
+        1. Proof name: 'hello01iso.cpc', with original size of 562.8kB, compressed 83.3kB.
+        2. Proof name: 'crciso.cpc', with original size of 18.4 MB, compressed 2.3 MB.
+        3. Proof name: 'crcp.cpc', with original size of 16.2 MB, compressed 2.1 MB.
+        4. Proof name: 'mempart.cpc' with original size of 15.3 kB, compressed 2.7 kB. 
+        SBOM: 34.7 kB
+        Total size: 6.1 MB
 
-- Example 4:
-    - Double Component inside the Manifest
-    - Double Proof inside the manifest encoded in Base64
-        1. Proof name: 'crcp.cpc.gz', with original size of 2.1MB
-        2. Proof name: 'crciso.cpc.gz' with original size of 2.3MB
-    - SBOM minimized and encoded in Base64 (cern-lhc-vdm-editor-e564943 SBOM example) 
+- Example 5: Double component, 5 proof inside the manifest encoded in Base64
+        1. Proof name: 'hello01iso.cpc', with original size of 562.8kB, compressed 83.3kB.
+        2. Proof name: 'hello01p.cpc', with original size of 476.2kB, compressed 72.0 kB.
+        3. Proof name: 'crciso.cpc', with original size of 18.4 MB, compressed 2.3 MB.
+        4. Proof name: 'crcp.cpc', with original size of 16.2 MB, compressed 2.1 MB.
+        5. Proof name: 'mempart.cpc' with original size of 15.3 kB, compressed 2.7 kB. 
+        6. Proof name: 'pic32mz2.cpc' with original size of 40.8kB, compressed 6.6kB.
+        SBOM: 34.7 kB
+        Total size: 6.2 MB 
 
-- Example 5:
-    - Single Component inside the Manifest
-    - Single Proof inside the manifest encoded in Base64 (proof name: 'dijkstrap.cpc.gz'), with original size of 23.1MB
-    - Custom SBOM minimized and encoded in Base64 (custom SBOM of Baremetal TEE with MPU) 
+- Example 6: Double component, 4 proof inside the manifest encoded in Base64
+        1. Proof name: 'crciso.cpc', with original size of 18.4 MB, compressed 2.3 MB.
+        2. Proof name: 'crcp.cpc', with original size of 16.2 MB, compressed 2.1 MB.
+        3. Proof name: 'mutestp.cpc' with original size of 24.5 MB, compressed 3.2 MB.
+        4. Proof name: 'mutestiso.cpc" with original size of 27.7 MB, compressed 3.4 MB.
+        SBOM: 34.7 kB
+        Total size: 14.7 MB
 
-- Example 6:
-    - Single Component inside the Manifest
-    - Double Proof inside the manifest encoded in Base64
-        1. Proof name: 'dijkstrap.cpc.gz', with original size of 23.1MB
-        2. Proof name: 'dijkstraiso.cpc.gz', with original size of 24.3MB
-    - Custom SBOM minimized and encoded in Base64 (custom SBOM of Baremetal TEE with MPU) 
+- Example 7: Triple component, 5 proof inside the manifest encoded in Base64
+        1. Proof name: 'hello01iso.cpc', with original size of 562.8kB, compressed 83.3kB.
+        2. Proof name: 'hello01p.cpc', with original size of 476.2kB, compressed 72.0 kB.
+        3. Proof name: 'crciso.cpc', with original size of 18.4 MB, compressed 2.3 MB.
+        4. Proof name: 'crcp.cpc', with original size of 16.2 MB, compressed 2.1 MB.
+        5. Proof name: 'mempart.cpc' with original size of 15.3 kB, compressed 2.7 kB. 
+        SBOM: 34.7 kB
+        Total size: 6.2 MB
 
-- Example 7:
-    - Double Component inside the Manifest
-    - Triple Proof inside the manifest encoded in Base64
-        1. Proof name: 'crcp.cpc.gz', with original size of 2.1MB
-        2. Proof name: 'crciso.cpc.gz' with original size of 2.3MB
-        3. Proof name: 'mutestp.cpc.gz' with original size of 3.2MB
-    - SBOM minimized and encoded in Base64 (cern-lhc-vdm-editor-e564943 SBOM example) 
+- Example 8: Triple component, 6 proof inside the manifest encoded in Base64
+        1. Proof name: 'mempart.cpc' with original size of 15.3 kB, compressed 2.7 kB.
+        2. Proof name: 'pic32mz2.cpc' with original size of 40.8kB, compressed 6.6kB.
+        3. Proof name: 'crciso.cpc', with original size of 18.4 MB, compressed 2.3 MB.
+        4. Proof name: 'crcp.cpc', with original size of 16.2 MB, compressed 2.1 MB.
+        5. Proof name: 'mutestp.cpc' with original size of 24.5 MB, compressed 3.2 MB.
+        6. Proof name: 'mutestiso.cpc" with original size of 27.7 MB, compressed 3.4 MB.
+        SBOM: 34.7 kB
+        Total size: 14.7 MB
 
-- Example 8:
-    - Double Component inside the Manifest
-    - Quadruple Proof inside the manifest encoded in Base64
-        1. Proof name: 'crcp.cpc.gz', with original size of 2.1MB
-        2. Proof name: 'crciso.cpc.gz' with original size of 2.3MB
-        3. Proof name: 'mutestp.cpc.gz' with original size of 3.2MB
-        4. Proof name: 'mutestiso.cpc.gz" with original size of 3.4MB
-    - SBOM minimized and encoded in Base64 (cern-lhc-vdm-editor-e564943 SBOM example) 
+- Example 9: Triple component, 7 proof inside the manifest encoded in Base64
+        1. Proof name: 'mempart.cpc' with original size of 15.3 kB, compressed 2.7 kB.
+        2. Proof name: 'pic32mz2.cpc' with original size of 40.8kB, compressed 6.6kB.
+        3. Proof name: 'crciso.cpc', with original size of 18.4 MB, compressed 2.3 MB.
+        4. Proof name: 'crcp.cpc', with original size of 16.2 MB, compressed 2.1 MB.
+        5. Proof name: 'mutestp.cpc' with original size of 24.5 MB, compressed 3.2 MB.
+        6. Proof name: 'mutestiso.cpc" with original size of 27.7 MB, compressed 3.4 MB.
+        7. Proof name: 'hello01iso.cpc', with original size of 562.8kB, compressed 83.3kB.
+        SBOM: 34.7 kB
+        Total size: 14.8 MB
+
+- Example 10: 10 component, 4 proof inside the manifest encoded in Base64
+        1. Proof name: 'hello01iso.cpc', with original size of 562.8kB, compressed 83.3kB.
+        2. Proof name: 'hello01p.cpc', with original size of 476.2kB, compressed 72.0 kB.
+        3. Proof name: 'crciso.cpc', with original size of 18.4 MB, compressed 2.3 MB.
+        4. Proof name: 'crcp.cpc', with original size of 16.2 MB, compressed 2.1 MB.
+        SBOM: 2.4 kB
+        Total size: 6.1 MB

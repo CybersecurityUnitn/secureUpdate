@@ -1,0 +1,4 @@
+.vscode/
+myenv/*
+ietf_suit_tool.egg-info/*
+suit_tool/__pycache__/*
