@@ -8,9 +8,7 @@ This repository contains suit-tool, a tool to generate and sign manifests follow
 
 The repository is organized as follows:
 * the `bin` folder contains the files needed to install the tool and a small example to test the basic functionalities;
-* the `example` folder contains a set of examples used for testing and a script to generate, sign and parse the manifests of the examples in the folder. It also includes some SBOMs used in the examples;
-* the `suit-tool` folder contains the actual codebase of the tool;
-* the `tests` folder contains the result of the tested example on a Raspberry Pi 4b (quad-core ARM Cortex-A72 processor running at 1.5 GHz and 2 GB of RAM). 
+* the `suit-tool` folder contains the actual codebase of the tool.
 
 # Installing
 
