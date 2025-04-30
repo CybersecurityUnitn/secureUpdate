@@ -25,11 +25,12 @@ The repository is organized as follows.
       parsing of the manifests;
     - in the `SBOM` folder, a set of three sample Software Bill Of Materials
       of various sizes;
-    - in the `manifests` folder, a set of ten sample manifests used for the
-      experimental evaluation of the implementation;
     - in the `proofs` folder, a set of proofs of various formal properties
       together with a script (`make_proofs.sh`) to automate and time the proof
-      verification process.
+      verification process;
+    - in the `manifests` folder, a set of ten sample JSON files (to be used as
+      input for `suit-tool`) which were used to produce the SUIT manifests
+      involved in the experimental evaluation of the implementation.
 - The `test_results` folder contains the results of parsing and validating the
   sample manifests on a Raspberry Pi 4B (quad-core ARM Cortex-A72 processor
   running at 1.5 GHz with 2 GB of RAM).
