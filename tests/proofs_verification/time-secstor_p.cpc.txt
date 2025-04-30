@@ -1,26 +1,26 @@
 Proof verification time:
 ~~~
-real 85.49s
-user 84.66s
-sys 1.53s
+real 219.09s
+user 217.23s
+sys 3.39s
 ~~~
 Verification memory usage:
 ~~~
-	Command being timed: "sh -c ./ethos_check.sh crcp.cpc > /dev/null 2> /dev/null"
-	User time (seconds): 84.66
-	System time (seconds): 1.49
+	Command being timed: "./ethos_check.sh secstor_p.cpc"
+	User time (seconds): 219.43
+	System time (seconds): 3.70
 	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 1m 25.48s
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3m 41.74s
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 1318912
+	Maximum resident set size (kbytes): 3244192
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 93586
-	Voluntary context switches: 11371
-	Involuntary context switches: 261
+	Minor (reclaiming a frame) page faults: 226417
+	Voluntary context switches: 23994
+	Involuntary context switches: 1786
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0

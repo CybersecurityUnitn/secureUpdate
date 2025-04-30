@@ -1,26 +1,26 @@
 Proof verification time:
 ~~~
-real 1.98s
-user 1.93s
-sys 0.07s
+real 3.32s
+user 3.26s
+sys 0.10s
 ~~~
 Verification memory usage:
 ~~~
-	Command being timed: "sh -c ./ethos_check.sh hello01iso.cpc > /dev/null 2> /dev/null"
-	User time (seconds): 1.92
-	System time (seconds): 0.08
+	Command being timed: "./ethos_check.sh aes_p.cpc"
+	User time (seconds): 3.28
+	System time (seconds): 0.11
 	Percent of CPU this job got: 101%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0m 1.98s
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0m 3.34s
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 80384
+	Maximum resident set size (kbytes): 102912
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 5323
-	Voluntary context switches: 374
-	Involuntary context switches: 11
+	Minor (reclaiming a frame) page faults: 6976
+	Voluntary context switches: 679
+	Involuntary context switches: 22
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0

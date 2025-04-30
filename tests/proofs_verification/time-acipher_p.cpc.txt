@@ -1,26 +1,26 @@
 Proof verification time:
 ~~~
-real 142.36s
-user 141.07s
-sys 2.32s
+real 64.72s
+user 64.01s
+sys 1.27s
 ~~~
 Verification memory usage:
 ~~~
-	Command being timed: "sh -c ./ethos_check.sh mutestp.cpc > /dev/null 2> /dev/null"
-	User time (seconds): 141.20
-	System time (seconds): 2.32
+	Command being timed: "./ethos_check.sh acipher_p.cpc"
+	User time (seconds): 64.19
+	System time (seconds): 1.27
 	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 2m 22.49s
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1m 4.95s
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2147328
+	Maximum resident set size (kbytes): 1085440
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 151050
-	Voluntary context switches: 17040
-	Involuntary context switches: 775
+	Minor (reclaiming a frame) page faults: 76789
+	Voluntary context switches: 9235
+	Involuntary context switches: 389
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
