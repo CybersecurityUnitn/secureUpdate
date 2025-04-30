@@ -1,0 +1,32 @@
+Parsing and signature verification time:
+~~~
+real 94.96s
+user 92.39s
+sys 2.03s
+~~~
+Parsing and signature verification memory usage:
+~~~
+	Command being timed: "sh -c ./out/secure_update validate-manifest signed-large-2.json.suit > /dev/null 2> /dev/null"
+	User time (seconds): 92.23
+	System time (seconds): 2.16
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1m 34.88s
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1404416
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 128527
+	Voluntary context switches: 13085
+	Involuntary context switches: 463
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 48360
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+~~~
